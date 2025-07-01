@@ -1,5 +1,5 @@
 # === FILE: mainkonsepoop.py ===
-from konsepoop import produk, AkunPembeli, ManajemenAkun
+from AllClass import produk, AkunPembeli, ManajemenAkun
 
 # Tambah Produk Awal
 produk("laptop Asus", 9000, "Abu", "Elektronik", 5, "Bandung")
@@ -24,7 +24,7 @@ def registrasi():
 
     for akun in ManajemenAkun.daftar_akun:
         if akun._email == email:
-            print("Email sudah digunakan. Gagal registrasi.")
+            print("Email sudah digunakan. Silahkan Login Menggunakan akun email yang sudah terdaftar.")
             return None
 
     akun_baru = AkunPembeli(nama, email, nomer_hp, alamat, password)

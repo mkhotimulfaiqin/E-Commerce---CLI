@@ -154,7 +154,7 @@ class Pembeli(Pengguna):
         else:
             for i, (p, j) in enumerate(self.__keranjang, 1):
                 print(f"{i}. {p.get_nama()} x{j} - Rp{p.get_harga() * j}")
-
+                
 # === LOGIN SYSTEM ===
 class Akun(ABC):
     def __init__(self, email, password):
